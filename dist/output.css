@@ -557,25 +557,13 @@ video {
 @font-face {
   font-family: "vazir";
 
-  src: url("fonts/Vazirmatn-Medium.ttf") format("truetype");
+  src: url("fonts/Vazirmatn-Black.ttf") format("truetype");
 }
 
 .font-custom {
   font-family: "vazir", sans-serif;
 }
 
-.custom-bg-color-1 {
+.custom-bg-color{
   background-color: #111827;
-}
-
-.custom-bg-color-2 {
-  background-color: #374151;
-}
-
-.custom-bg-color-3 {
-  background-color: #1f2937;
-}
-
-.custom-bg-color-4 {
-  background-color: #f56646;
 }

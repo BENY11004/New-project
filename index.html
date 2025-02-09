@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="output.css">
+        <title>form</title>
+        <link rel="stylesheet" href="output.css" />
     </head>
-    <body>
-        <div class="size-6 bg-purple-200">ddddd</div>
+    <body dir="rtl" class="font-custom text-white">
+        <form action="#" method="get">
+            <div class="flex custom-bg-color-1 min-h-screen justify-center items-center">
+                <div class="flex flex-col mt-3 w-11/12 lg:w-8/12 gap-3 custom-bg-color-3 p-5 lg:px-24 lg:py-10 rounded-2xl">
+                    <div class="flex flex-col gap-3">
+                        <p class="text-2xl">ارتباط با ما *</p>
+                        <div class="flex flex-col lg:flex-row gap-5">
+                            <div class="flex flex-col w-full lg:w-1/2">
+                                <span>نام *</span>
+                                <input type="text" class="rounded-lg h-10 custom-bg-color-2 border border-gray-700 px-3 mt-3" />
+                            </div>
+                            <div class="flex flex-col w-full lg:w-1/2">
+                                <span>نام خانوادگی *</span>
+                                <input type="text" class="rounded-lg h-10 custom-bg-color-2 border border-gray-700 px-3 mt-3" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>آدرس ایمیل *</span>
+                        <input type="text" class="rounded-lg h-10 custom-bg-color-2 border border-gray-700 px-3 mt-3" />
+                    </div>
+                    <div>
+                        <span>نوع درخواست *</span>
+                        <div class="flex lg:flex-row flex-col">
+                            <label for="radio1" class="rounded-lg h-10 custom-bg-color-2 border border-gray-700 px-3 pt-2 cursor-pointer mt-3 w-full lg:w-1/2 ml-3"><input type="radio" name="radio" id="radio1" class="ml-5" />پرسش عمومی</label>
+                            <label for="radio2" class="rounded-lg h-10 custom-bg-color-2 border border-gray-700 mt-3 px-3 pt-2 cursor-pointer w-full lg:w-1/2"><input type="radio" name="radio" id="radio2" class="ml-5" />درخواست پشتیبانی</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span>پیام</span>
+                        <textarea type="text" id="message-box" class="rounded-lg h-40 custom-bg-color-2 border border-gray-700 px-3 mt-3 resize-none"></textarea>
+                    </div>
+                    <button class="rounded-lg h-10 custom-bg-color-4 text-black mt-8">ثبت درخواست</button>
+                </div>
+            </div>
+        </form>
     </body>
-    <script src="index.js"></script>
 </html>
